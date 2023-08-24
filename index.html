@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../07- ROTEIRO/assets/css/style.index.css">
+    <script src="assets/js/script.index.js"></script>
+    <title>Estrutura Inicial - Roteiro</title>
+</head>
+<body>
+   <!--
+    //Primeiro passo vai ser criar uma div, pois identificamos que é preciso uma div controle/pai.
+// Essa div geralmente é chamada de container. Ela precisará de um id ou class.  -->
+
+   <div id="container">
+    <!--Dentro dessa div, indentificamos um H2, 5 inputs Com labelse 1 botão. 
+    //Então iremos criar as tags.-->
+
+    <!--Criaremos o H2, que possui uma class ou id e seu texto/valor. -->
+
+    <h2 id="titulo-principal">
+        <!--Aqui dentro do H2, entre as tags colocamos valor desse H2.-->
+        Cadastrar Jogos
+    </h2>
+    <!--Separar os inputs e labels e o botão, em apenas um bloco que seja só deles.Ele precisara de id ou class-->
+    <div id="input-continer">
+        <!--Criar os inputs com suas respectivas labels, a label contem for(id do input dela)
+        e seu texto. O input contem id,name,class(todos sempre do mesmo tipo), e seu type (tipo).-->
+        <label for="input-titulo"> Título </label>
+        <input type="text" id="input-titulo" name="input-titulo" class="input"/>
+
+        <label for="input-preco"> Preço </label>
+        <input type="number" id="input-preco" name="input-preco" class="input"/>
+
+        <label for="input-descricao"> Descrição </label>
+        <input type="text" id="input-descricao" name="input-descricao" class="input"/>
+
+        <label for="input-plataforma"> Plataforma </label>
+        <input type="text" id="input-plataforma" name="input-plataforma" class="input"/>
+
+        <label for="input-imglink"> Link da Imagem </label>
+        <input type="text" id="input-imglink" name="input-imglink" class="input"/>
+
+        <!-- Teremos uma mensagem, então precisamos de uma div vazia com um id para depois
+        alterar pelo javascript-->
+
+        <div id="msg"></div>
+
+        <!---Criar botão que possui id,class, onclick responsavel pela açao e seu texto-->
+        <button id="botao-criarjogo" class="button" onclick="comporJogo()">Cadastrar Jogo</button>
+
+        <!--Finalizamos a primeira parte do HTML e identificamos que precisamos de uma açao
+        que é cadastrar jogos. Entao iremos fazer no javascript-->
+
+        
+        </div>
+   </div>
+   <!--Div responsavel por receber os itens do html, esses itens serao cada posicao/
+elemeto do meu objeto-->
+<div id="containerLista">
+    <!--Essa div fica vazia, ate receber-->
+</div>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    
+</body>
+</html>
